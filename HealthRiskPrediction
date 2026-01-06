@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class HealthRiskPrediction {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of users: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+
+            System.out.println("Processing data for user " + i);
+
+            System.out.print("Enter age: ");
+            int age = sc.nextInt();
+
+            System.out.print("Enter glucose level: ");
+            int glucose = sc.nextInt();
+
+            System.out.print("Enter blood pressure: ");
+            int bp = sc.nextInt();
+
+            if (glucose > 140 || bp > 130) {
+                System.out.println("Health Risk Status: HIGH RISK");
+            } else {
+                System.out.println("Health Risk Status: LOW RISK");
+            }
+        }
+
+        sc.close();
+    }
+}
