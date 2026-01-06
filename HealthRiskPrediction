@@ -23,10 +23,12 @@ public class HealthRiskPrediction {
             int bp = sc.nextInt();
 
             if (glucose > 140 || bp > 130) {
-                System.out.println("Health Risk Status: HIGH RISK");
-            } else {
-                System.out.println("Health Risk Status: LOW RISK");
-            }
+            System.out.println("Health Risk Status: HIGH RISK - Medical attention advised");
+             } 
+            else {
+            System.out.println("Health Risk Status: LOW RISK - Maintain healthy lifestyle");
+             }
+
         }
 
         sc.close();
